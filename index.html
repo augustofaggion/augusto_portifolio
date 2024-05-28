@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="sytles.css">
   <!-- Bulma css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </head>
 <body>
   <header>
@@ -24,14 +25,22 @@
         <a class="navbar-item" href="#">About me</a>
         <a class="navbar-item" href="#contact">Contact me</a>
         <!-- Dropdown languages menu -->
-        <div class="dropdown is-right">
+        <div class="dropdown is-right is-active">
           <div class="dropdown-trigger">
-            <a class="navbar-item" href="#languages">EN</a>
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
+              <span>Right aligned</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
+          <!-- Need to make work using JS -->
           <div class="dropdown-menu" id="dropdown-menu6" role="menu">
             <div class="dropdown-content">
-              <div class="dropdown-itme">
-                <!-- Add here the items for the menu -->
+              <div class="dropdown-item">
+                <p>
+                  <!-- add here the new links later for multilaguage menu -->
+                </p>
               </div>
             </div>
           </div>
@@ -39,33 +48,124 @@
       </div>
     </nav>
   </header>
-  <section class="home">
-    <div class="">
-      <h1>Hello, I'm Augusto Faggion</h1>
-      <p>Full stack web developer</p>
-      <p>Empowering Your Digital Success with Innovative Solutions</p>
+  <!-- Home section -->
+  <section class="home mt-5">
+    <div class="container p-5">
+      <h1 class="title is-1 heading-primary">Hello, I'm Augusto Faggion</h1>
+      <p class="title is-2">Full stack web developer</p>
+      <p class="title is-5">Empowering Your Digital Success with Innovative Solutions</p>
     </div>
   </section>
+  <!-- Projects section -->
   <section class="projects">
-    <div class="project-box">Project</div>
-    <div class="project-box">Project</div>
-    <div class="project-box">Project</div>
-  </section>
-  <section class="skills">
-    <div class="skill-box">Skill</div>
-    <div class="skill-box">Skill</div>
-    <div class="skill-box">Skill</div>
-  </section>
-  <section class="about-me">
-    <div class="about-me-box">
-      <h2>About me</h2>
-      <p>My name is Augusto Faggion, I'm a full stack web developer. I have been working with web development for 2 years. I have experience with HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, MySQL, and Git. I'm always looking for new challenges and learning new technologies.</p>
+    <h2 class="has-text-centered title is-2 mt-5">Projects</h2>
+    <div class="projects container columns">
+      <!-- Project 1 -->
+      <!-- Make whole box as a link -->
+      <div class="project-box column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image project-image">
+              <img
+                src="./projects.jpg"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Project</p>
+                <p class="subtitle is-6 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque, voluptatum id excepturi inventore,</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-box column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image project-image">
+              <img
+                src="./projects.jpg"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Project</p>
+                <p class="subtitle is-6 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque, voluptatum id excepturi inventore,</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-box column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image project-image">
+              <img
+                src="./projects.jpg"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Project</p>
+                <p class="subtitle is-6 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque, voluptatum id excepturi inventore,</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
     </div>
+  </section>
+  <!-- Skills section -->
+  <section class="skills container mt-6 columns">
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+    <div class="skill-box column">Skill</div>
+  </section>
+  <!-- About me section -->
+  <section class="about-me">
+    <div class="about-me-box container columns">
+      <div class="column">
+        <h2>About me</h2>
+        <p>
+          <!-- Add new well structred text here -->
+          My name is Augusto Faggion,
+          I'm a full stack web developer.
+          I have been working with web development for 2 years.
+          I have experience with HTML, CSS, JavaScript, React,
+          Node.js, Express, MongoDB, MySQL, and Git.
+          I'm always looking for new challenges and learning
+          new technologies.
+        </p>
+      </div>
+      <!-- Align image to the conner -->
+      <div class="about-me-img column">
+        <figure class="image is-128x128">
+          <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
+        </figure>
+      </div>
+      <!-- under picture give the professional social media -->
+    </div>
+
   </section>
   <section class="contact">
     <div class="contact-box">
       <h2>Contact me</h2>
-      <form action="index.html" method="post">
+      <form action="" method="post">
         <input type="text" name="name" placeholder="Name">
         <input type="email" name="email" placeholder="Email">
         <textarea name="message" placeholder="Message"></textarea>
