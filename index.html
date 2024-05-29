@@ -9,8 +9,11 @@
   <!-- Bulma css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  <!-- Devicon -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <!-- Logo -->
     <nav class="navbar">
@@ -49,17 +52,18 @@
     </nav>
   </header>
   <!-- Home section -->
-  <section class="home mt-5">
-    <div class="container p-5">
-      <h1 class="title is-1 heading-primary">Hello, I'm Augusto Faggion</h1>
-      <p class="title is-2">Full stack web developer</p>
-      <p class="title is-5">Empowering Your Digital Success with Innovative Solutions</p>
-    </div>
-  </section>
-  <!-- Projects section -->
-  <section class="projects">
-    <h2 class="has-text-centered title is-2 mt-5">Projects</h2>
-    <div class="projects container columns">
+  <main class="main container">
+    <section class="home mt-5">
+      <div class="p-5">
+        <h1 class="title is-1 heading-primary">Hello, I'm Augusto Faggion</h1>
+        <p class="title is-2">Full stack web developer</p>
+        <p class="title is-5">Empowering Your Digital Success with Innovative Solutions</p>
+      </div>
+    </section>
+    <!-- Projects section -->
+    <section class="projects">
+    <h2 class="title is-2 mt-5">Projects</h2>
+    <div class="projects columns">
       <!-- Project 1 -->
       <!-- Make whole box as a link -->
       <div class="project-box column">
@@ -125,54 +129,90 @@
       </div>
       </div>
     </div>
-  </section>
-  <!-- Skills section -->
-  <section class="skills container mt-6 columns">
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-    <div class="skill-box column">Skill</div>
-  </section>
-  <!-- About me section -->
-  <section class="about-me">
-    <div class="about-me-box container columns">
-      <div class="column">
-        <h2>About me</h2>
-        <p>
-          <!-- Add new well structred text here -->
-          My name is Augusto Faggion,
-          I'm a full stack web developer.
-          I have been working with web development for 2 years.
-          I have experience with HTML, CSS, JavaScript, React,
-          Node.js, Express, MongoDB, MySQL, and Git.
-          I'm always looking for new challenges and learning
-          new technologies.
-        </p>
+    </section>
+    <!-- Skills section -->
+    <section class="skills mt-6 columns">
+      <!-- Add flex box for better design -->
+      <h2 class="title is-2 mt-5">Skills</h2>
+      <div class="skill-box column">
+        <i class="devicon-javascript-plain icons-skills"></i>
+        <p>Javascript</p>
       </div>
-      <!-- Align image to the conner -->
-      <div class="about-me-img column">
-        <figure class="image is-128x128">
-          <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
-        </figure>
+      <div class="skill-box column">
+        <i class="devicon-ruby-plain icons-skills"></i>
+        <p>Ruby</p>
       </div>
-      <!-- under picture give the professional social media -->
-    </div>
-
-  </section>
-  <section class="contact">
-    <div class="contact-box">
+      <div class="skill-box column">
+        <i class="devicon-html5-plain icons-skills"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-css3-plain icons-skills"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-rails-plain icons-skills"></i>
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-vuejs-plain icons-skills"></i>
+        <p>Vue.js</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-azuresqldatabase-plain icons-skills"></i>
+        <p>SQL</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-git-plain icons-skills"></i>
+        <p>Git</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-figma-plain icons-skills"></i>
+        <p>Figma</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-bootstrap-plain icons-skills"></i>
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill-box column">
+        <i class="devicon-sass-original icons-skills"></i>
+        <p>Sass</p>
+      </div>
+      </div>
+    </section>
+    <!-- About me section -->
+    <section class="about-me">
+      <div class="about-me-box columns">
+        <div class="column">
+          <h2>About me</h2>
+          <p>
+            <!-- Add new well structred text here -->
+            My name is Augusto Faggion,
+            I'm a full stack web developer.
+            I have been working with web development for 2 years.
+            I have experience with HTML, CSS, JavaScript, React,
+            Node.js, Express, MongoDB, MySQL, and Git.
+            I'm always looking for new challenges and learning
+            new technologies.
+          </p>
+        </div>
+        <!-- Align image to the conner -->
+        <div class="about-me-img column">
+          <figure class="image is-128x128">
+            <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
+          </figure>
+        </div>
+        <!-- under picture give the professional social media -->
+      </div>
+    </section>
+    <section class="contact">
       <h2>Contact me</h2>
-      <form action="" method="post">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+      <p>Telephone</p>
+      <p>Email</p>
+      <p>Github</p>
+      <p>linkedin</p>
+    </section>
+  </main>
   <footer>
 
   </footer>
