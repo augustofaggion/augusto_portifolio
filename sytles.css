@@ -14,3 +14,9 @@ html {
   font-size: 4.5rem;
   padding: 1rem;
 }
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
