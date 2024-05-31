@@ -1,7 +1,45 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 html {
-  font-size: 62.5%;
 }
+
+/* Navbar */
+.navbar {
+  /* background: url("./img/background/background2.jpg") center center/cover no-repeat; */
+  /* height: 5vh; */
+  background-color: darkblue;
+  /* background: rgb(2,85,188); */
+/* background: linear-gradient(90deg, rgba(2,85,188,1) 35%, rgba(12,22,108,1) 100%); */
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Reajust color later for the hoving */
+.navbar a:hover {
+
+}
+
+/* Home section */
+
+.home {
+  background: url("./img/background/background2.jpg") center center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-text h1,
+.home-text p{
+
+  color: white;
+  font-size: 2.5rem;
+
+}
+
 
 /* Project Section */
 .project-box{
@@ -13,6 +51,14 @@ html {
 .icons-skills {
   font-size: 4.5rem;
   padding: 1rem;
+}
+
+
+
+/* Skills sections */
+.skills {
+  background: darkblue;
+  height: 80vh;
 }
 
 .cell {

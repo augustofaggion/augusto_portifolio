@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Augusto Faggion</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="sytles.css">
   <!-- Bulma css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="sytles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
   <!-- Devicon -->
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
   <!-- Header Section -->
-  <header>
+  <header class="header">
     <!-- Logo -->
-    <nav class="navbar">
+    <nav class="navbar px-3">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">My Portifolio</a>
       </div>
@@ -27,40 +27,21 @@
         <a class="navbar-item" href="#">Skills</a>
         <a class="navbar-item" href="#">About me</a>
         <a class="navbar-item" href="#contact">Contact me</a>
-        <!-- Dropdown languages menu -->
-        <div class="dropdown is-right is-active">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
-              <span>Right aligned</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <!-- Need to make work using JS -->
-          <div class="dropdown-menu" id="dropdown-menu6" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <p>
-                  <!-- add here the new links later for multilaguage menu -->
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Add dropdown menu for languages later-->
       </div>
     </nav>
   </header>
   <!-- Home section -->
-  <main class="main container">
-    <section class="home mt-5">
-      <div class="p-5">
+  <main class="main">
+    <section class="home">
+      <div class="p-5 has-text-centered home-text">
         <h1 class="title is-1 heading-primary">Hello, I'm Augusto Faggion</h1>
         <p class="title is-2">Full stack web developer</p>
         <p class="title is-5">Empowering Your Digital Success with Innovative Solutions</p>
       </div>
     </section>
     <!-- Projects section -->
+  <div class="container">
     <section class="projects">
     <h2 class="title is-2 mt-5">Projects</h2>
     <div class="projects columns">
@@ -131,7 +112,7 @@
     </div>
     </section>
     <!-- Skills section -->
-    <section class="skills mt-6 ">
+    <section class="skills mt-6 box">
       <!-- Add flex box for better design -->
         <h2 class="title is-2 mt-5">Skills</h2>
         <!-- Grid -->
@@ -221,13 +202,48 @@
     </section>
     <section class="contact">
       <h2 class="title is-2">Contact me</h2>
+     <!-- Testing formular design -->
+     <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="">
+      </div>
+    </div>
+
+
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" placeholder="" value="">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Textarea"></textarea>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+    </div>
+     <!-- Testing formular design -->
       <p>
         <i class="fa-solid fa-phone"></i>
-        Telephone</p>
+        Telephone :</p>
       <p>
         <i class="fa-solid fa-envelope"></i>
         Email</p>
     </section>
+  </div>
   </main>
   <footer>
   </footer>
