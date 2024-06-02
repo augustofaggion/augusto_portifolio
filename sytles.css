@@ -2,13 +2,22 @@
 html {
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+:root {
+  --primary-color: #0c166c;
+  --secondary-color: #0044cf;
+
+}
+
 /* Navbar */
 .navbar {
-  /* background: url("./img/background/background2.jpg") center center/cover no-repeat; */
-  /* height: 5vh; */
-  background-color: darkblue;
-  /* background: rgb(2,85,188); */
-/* background: linear-gradient(90deg, rgba(2,85,188,1) 35%, rgba(12,22,108,1) 100%); */
+  background-color: var(--primary-color);
 }
 
 .navbar a {
@@ -24,7 +33,8 @@ html {
 /* Home section */
 
 .home {
-  background: url("./img/background/background2.jpg") center center/cover no-repeat;
+  background: rgb(0var(--primary-color),207);
+  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -46,23 +56,64 @@ html {
   width: 256px;
 }
 
-
-/* Icons */
-.icons-skills {
-  font-size: 4.5rem;
-  padding: 1rem;
+/* Skills sections */
+.skills-box {
+  background: rgb(0var(--primary-color),207);
+  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
 }
 
-
-
-/* Skills sections */
-.skills {
-  background: darkblue;
-  height: 80vh;
+.skills-text{
+  color: white;
+  font-weight: bold;
 }
 
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Icons */
+.icons-skills {
+  font-size: 4.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+/* About me Section */
+
+.about-me-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-me-text {
+  width: 50%;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding: 40px;
+}
+
+.about-me-img {
+  margin: 0   50px;
+}
+
+
+
+.image-about-me {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* Contact me section */
+.contact {
+  background: rgb(0var(--primary-color),207);
+  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
+  color: white;
+}
+
+.label{
+  color: white;
 }
