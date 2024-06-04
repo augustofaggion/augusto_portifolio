@@ -117,3 +117,47 @@ body {
 .label{
   color: white;
 }
+
+.contacts-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  gap: 1rem;
+}
+
+.contacts-options .button {
+  width: 100px; /* adjust as needed */
+  height: 50px; /* adjust as needed */
+  padding: 5px; /* adjust as needed */
+  font-size: 12px; /* adjust as needed */
+}
+
+.store-whatsapp {
+  position: fixed; /* Keeps the button in a fixed position on the screen */
+  z-index: 9998; /* Ensures the button is above other elements */
+  right: 20px; /* Positions the button 20px from the right-hand side of the screen */
+  bottom: 10px; /* Positions the button 10px from the bottom of the screen */
+  display: flex; /* Uses Flexbox for the internal button layout */
+  align-items: center; /* Centres the content (icon) vertically */
+  justify-content: center; /* Centers the content (icon) horizontally */
+  padding: 20px; /* Internal spacing around the icon */
+  border-radius: 50%; /* Makes the button circular */
+  background: #25D366 ; /* Background colour of the button */
+  box-shadow: 0 0 20px transparent; /* Soft shadow around the button */
+  font-size: 25px; /* Size of the icon inside the button */
+  text-align: center; /* Alignment of the text/icon */
+  text-decoration: none; /* Removes any text decoration from the link */
+  }
+
+  .store-whatsapp:hover {
+  background: #128C7E !important; /* Background color on mouseover */
+  box-shadow: 0 0 20px rgb(75 57 75 / 50%); /* Shadow more prominent on mouseover */
+  color: #128C7E !important; /* Mouse-over icon color */
+  }
+
+  .icon-contact {
+    font-size: 2rem;
+    color: white;
+  }
