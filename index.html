@@ -12,6 +12,19 @@
   <!-- Devicon -->
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
+<!-- Email JS -->
+<!-- js mailing -->
+<script src="javascript/mailing.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init({
+      publicKey: "cAyecUTDq6qr-HdST",
+    });
+  })();
+</script>
 <body>
   <!-- Header Section -->
   <header class="header">
@@ -209,24 +222,24 @@
       <div class="field">
       <label class="label">Name</label>
       <div class="control">
-        <input class="input" type="text" placeholder="">
+        <input  id="name" class="input" type="text" placeholder="">
       </div>
     </div>
     <div class="field">
       <label class="label">Email</label>
       <div class="control">
-        <input class="input" type="email" placeholder="" value="">
+        <input  id="email" class="input" type="email" placeholder="" value="">
       </div>
     </div>
     <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" placeholder=""></textarea>
+        <textarea  id="message" class="textarea" placeholder=""></textarea>
       </div>
     </div>
     <div class="field is-grouped">
       <div class="control">
-        <button class="button is-link">Submit</button>
+        <button class="button is-link" onclick="sendMail()">Submit</button>
       </div>
     </div>
   </div>
