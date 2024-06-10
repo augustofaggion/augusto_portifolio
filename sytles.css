@@ -1,4 +1,8 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+* {
+  box-sizing: border-box;
+}
 html {
 }
 
@@ -10,18 +14,22 @@ body {
 }
 
 :root {
-  --primary-color: #0c166c;
-  --secondary-color: #0044cf;
-
+  --primary-color: #24243e;
+  --secondary-color: #302b63;
+  --tertiary-color: #0f0c29;
+  --text-color: #fff;
 }
 
 /* Navbar */
 .navbar {
-  background-color: var(--primary-color);
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .navbar a {
-  color: white;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -33,8 +41,9 @@ body {
 /* Home section */
 
 .home {
-  background: rgb(0var(--primary-color),207);
-  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -52,9 +61,7 @@ body {
 
 
 /* Project Section */
-.project-box{
-  width: 256px;
-}
+
 
 /* Skills sections */
 .skills-box {
@@ -86,6 +93,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.text-paragraph {
+  margin: 1;
 }
 
 .about-me-text {
