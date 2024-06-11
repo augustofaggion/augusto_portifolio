@@ -1,5 +1,5 @@
 new TypeIt(".heading-primary", {
   strings: "",
-  speed: 90,
+  speed: 100,
   loop: false,
 }).go();
