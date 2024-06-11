@@ -22,7 +22,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #0f0c29;  /* fallback for old browsers */
+background: #0f0c29;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -53,12 +53,34 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 .home-text h1,
 .home-text p{
-
   color: white;
   font-size: 2.5rem;
-
 }
 
+/* Services Section */
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1; /* Make all boxes take up equal space */
+  max-width: 350px; /* Optional: Limit the width of each box */
+  height: 350px;
+  margin: 0 10px;  /* Optional: Limit the width of each box */
+}
+
+.icon-services {
+  width: 76px;
+  height: 76px;
+  padding: 10px;
+}
 
 /* Project Section */
 
