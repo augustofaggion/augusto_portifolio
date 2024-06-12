@@ -151,7 +151,7 @@ background: var(--secondary-color);  /* fallback for old browsers */
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
   align-items: center;
 }
 
@@ -164,9 +164,28 @@ background: var(--secondary-color);  /* fallback for old browsers */
 
 /* Contact me section */
 .contact {
-  background: rgb(0var(--primary-color),207);
-  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
   color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000; /* Adjust as needed */
+
+  }
+
+
+
+  .form input, .form textarea {
+  width: 500px; /* adjust as needed */
+  height: 40px; /* adjust as needed */
+  padding: 5px; /* adjust as needed */
 }
 
 .label{
@@ -216,3 +235,7 @@ background: var(--secondary-color);  /* fallback for old browsers */
     font-size: 2rem;
     color: white;
   }
+
+  /* ! Make navbar responsive */
+  /* ? make better footer */
+  /* TRy to find why border is so big */
