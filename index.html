@@ -27,17 +27,23 @@
     <nav class="navbar px-3">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">Augusto Faggion</a>
+        <!-- Hamburger menu -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <!-- Navigation -->
-      <div class="navbar-end">
+      <div id="navbarMenu" class="navbar-menu navbar-end">
         <a class="navbar-item" href="index.html">Home</a>
         <a class="navbar-item" href="#">Projects</a>
         <a class="navbar-item" href="#">Skills</a>
         <a class="navbar-item" href="#">About me</a>
         <a class="navbar-item" href="#contact">Contact me</a>
-        <!-- Add dropdown menu for languages later-->
       </div>
     </nav>
+
   </header>
   <!-- Home section -->
   <main class="main">
@@ -187,6 +193,10 @@
       <p>
         <strong>Created</strong> by <a href="put github linkedin here">Augusto Faggion</a>
       </p>
+      <div class="icons-footer">
+        <i class="devicon-linkedin-plain  icon-footer"></i>
+        <i class="devicon-github-plain icon-footer"></i>
+      </div>
     </div>
   </footer>
   <!-- Fontawesome -->
@@ -194,6 +204,7 @@
   <!-- Type it JS -->
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <script src="./javascript/typying.js"></script>
+  <script src="./javascript/toogle_navbar.js"></script>
 </body>
 </html>
 

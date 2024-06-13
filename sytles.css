@@ -6,6 +6,15 @@
 html {
 }
 
+/* test */
+
+.box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -176,7 +185,6 @@ background: var(--secondary-color);  /* fallback for old browsers */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000000; /* Adjust as needed */
 
   }
 
@@ -186,6 +194,7 @@ background: var(--secondary-color);  /* fallback for old browsers */
   width: 500px; /* adjust as needed */
   height: 40px; /* adjust as needed */
   padding: 5px; /* adjust as needed */
+  background-color: #fff;
 }
 
 .label{
@@ -236,6 +245,38 @@ background: var(--secondary-color);  /* fallback for old browsers */
     color: white;
   }
 
+  .footer {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  }
+
   /* ! Make navbar responsive */
+  /* Initially hide the navbar menu */
+.navbar-menu {
+
+}
+
+/* Show the navbar menu when the 'is-active' class is added */
+.navbar-menu.is-active {
+  display: flex;
+}
+
+/* Show the burger menu icon on small screens */
+@media (max-width: 768px) {
+  .navbar-burger {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.is-active {
+    display: block;
+  }
+}
+
+
   /* ? make better footer */
   /* TRy to find why border is so big */
