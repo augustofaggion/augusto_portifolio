@@ -1,0 +1,45 @@
+/* Navbar */
+.navbar {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+/* Show the navbar menu when the 'is-active' class is added */
+.navbar-menu.is-active {
+  display: flex;
+  background-color: #302b63;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+/* Show the burger menu icon on small screens */
+@media (max-width: 768px) {
+  .navbar-burger {
+    display: block;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-menu.is-active {
+    display: block;
+  }
+  .seo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+/* Navbar links  */
+.navbar a {
+  color: var(--text-color);
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar a:hover {
+  background-color: rgb(37, 36, 36);
+}

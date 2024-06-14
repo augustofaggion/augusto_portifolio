@@ -1,10 +1,29 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+@import url("./components/whatssap.css");
+@import url("./components/navbar.css");
+
+/* ! Todo section */
+
+ /* todo List */
+  /* screen  890px icon service bar get smaller repair*/
+  /* smaller size on projects for the box */
+  /* Make icons smaller on the about me section */
+  /* REmove space between hello nav and skills section */
+  /* TRy to find why border is so big Augusto home section */
+  /* Make Css cleaner */
+  /* Make fully responsive */
+
+  /* ? make better footer */
+
+  /* ! */
+
 
 * {
   box-sizing: border-box;
 }
-html {
-}
+
+/* html {
+} */
 
 /* test */
 
@@ -29,23 +48,6 @@ body {
   --text-color: #fff;
 }
 
-/* Navbar */
-.navbar {
-background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.navbar a {
-  color: var(--text-color);
-  font-weight: bold;
-}
-
-/* Reajust color later for the hoving */
-.navbar a:hover {
-  /* ! to add hover effect */
-}
 
 /* Home section */
 
@@ -81,7 +83,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   align-items: center;
   flex-grow: 1; /* Make all boxes take up equal space */
   max-width: 350px; /* Optional: Limit the width of each box */
-  height: 350px;
+  min-height: 350px;
   margin: 0 10px;  /* Optional: Limit the width of each box */
 }
 
@@ -201,49 +203,11 @@ background: var(--secondary-color);  /* fallback for old browsers */
   color: white;
 }
 
-.contacts-options {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  gap: 1rem;
-}
 
-.contacts-options .button {
-  width: 100px; /* adjust as needed */
-  height: 50px; /* adjust as needed */
-  padding: 5px; /* adjust as needed */
-  font-size: 12px; /* adjust as needed */
-}
 
-.store-whatsapp {
-  position: fixed; /* Keeps the button in a fixed position on the screen */
-  z-index: 9998; /* Ensures the button is above other elements */
-  right: 20px; /* Positions the button 20px from the right-hand side of the screen */
-  bottom: 10px; /* Positions the button 10px from the bottom of the screen */
-  display: flex; /* Uses Flexbox for the internal button layout */
-  align-items: center; /* Centres the content (icon) vertically */
-  justify-content: center; /* Centers the content (icon) horizontally */
-  padding: 20px; /* Internal spacing around the icon */
-  border-radius: 50%; /* Makes the button circular */
-  background: #25D366 ; /* Background colour of the button */
-  box-shadow: 0 0 20px transparent; /* Soft shadow around the button */
-  font-size: 25px; /* Size of the icon inside the button */
-  text-align: center; /* Alignment of the text/icon */
-  text-decoration: none; /* Removes any text decoration from the link */
-  }
 
-  .store-whatsapp:hover {
-  background: #128C7E !important; /* Background color on mouseover */
-  box-shadow: 0 0 20px rgb(75 57 75 / 50%); /* Shadow more prominent on mouseover */
-  color: #128C7E !important; /* Mouse-over icon color */
-  }
 
-  .icon-contact {
-    font-size: 2rem;
-    color: white;
-  }
+
 
   .footer {
     background: #0f0c29;  /* fallback for old browsers */
@@ -251,32 +215,42 @@ background: var(--secondary-color);  /* fallback for old browsers */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   }
 
-  /* ! Make navbar responsive */
-  /* Initially hide the navbar menu */
-.navbar-menu {
 
-}
 
-/* Show the navbar menu when the 'is-active' class is added */
-.navbar-menu.is-active {
-  display: flex;
-}
+  /* skills media querie */
+  @media screen and (max-width: 868px) {
+    .skills-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Show the burger menu icon on small screens */
-@media (max-width: 768px) {
-  .navbar-burger {
-    display: block;
+    .service-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      flex-grow: 1; /* Make all boxes take up equal space */
+      max-width: 350px; /* Optional: Limit the width of each box */
+      height: 350px;
+      margin: 0 10px;  /* Optional: Limit the width of each box */
+    }
   }
 
-  .navbar-menu {
-    display: none;
+
+
+  /* services */
+  .equal-height {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .navbar-menu.is-active {
-    display: block;
+  .equal-height .column {
+    display: flex;
+    flex-direction: column;
   }
-}
 
-
-  /* ? make better footer */
-  /* TRy to find why border is so big */
+  .equal-height .box {
+    flex-grow: 1;
+  }
