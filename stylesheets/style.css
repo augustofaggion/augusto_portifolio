@@ -102,7 +102,10 @@ background: var(--secondary-color);  /* fallback for old browsers */
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
 
+.project {
+  width: 300px;
 }
 
 .img-project {
@@ -157,6 +160,12 @@ background: var(--secondary-color);  /* fallback for old browsers */
   margin: 10px; /* Add margin to separate the icons */
 }
 
+@media  screen and (max-width: 768px) {
+  .icons-about {
+    font-size: 3rem;
+  }
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -195,6 +204,13 @@ background: var(--secondary-color);  /* fallback for old browsers */
   height: 40px; /* adjust as needed */
   padding: 5px; /* adjust as needed */
   background-color: #fff;
+}
+
+/* footer */
+.icon-footer {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 15px
 }
 
 @media screen and (max-width: 1068px){

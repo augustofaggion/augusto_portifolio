@@ -37,7 +37,7 @@
       <!-- Navigation -->
       <div id="navbarMenu" class="navbar-menu navbar-end">
         <a class="navbar-item" href="#home">Home</a>
-        <a class="navbar-item" href="#projects">Projects</a>
+        <a class="navbar-item" href="#project">Projects</a>
         <a class="navbar-item" href="#service">Skills</a>
         <a class="navbar-item" href="#about-me">About me</a>
         <a class="navbar-item" href="#contact">Contact me</a>
@@ -47,7 +47,7 @@
   </header>
   <!-- Home section -->
   <main class="main">
-    <section class="home hero-body">
+    <section class="home hero-body" id="home">
       <div class="container has-text-centered home-text">
         <h1 class="title is-size-3-mobile is-size-2-tablet is-size-1-desktop heading-primary">Hello, I'm Augusto Faggion</h1>
         <p class="subtitle is-size-4-mobile is-size-3-tablet is-size-2-desktop">Full stack web developer</p>
@@ -57,7 +57,7 @@
     <!-- Services Section -->
     <section class="services my-6" id="service">
       <div class="container">
-        <h2 class="title is-2 mt-5 has-text-centered">Skills</h2>
+        <h2 class="title is-2 my-6 has-text-centered">Skills</h2>
         <div class="columns is-multiline equal-height">
           <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
             <div class="box has-text-centered">
@@ -91,10 +91,10 @@
     </section>
 
     <!-- Projects section -->
-    <section class="projects-section py-4">
+    <section class="projects-section py-4" id="project">
       <h3 class="title has-text-centered mt-6 has-text-white">Projects</h3>
       <!-- Project 1 -->
-      <div class="projects">
+      <div class="projects my-6">
         <div class="project box">
           <a href="">
             <figure class="image">
@@ -113,7 +113,7 @@
       </div>
     </section>
     <!-- About-me & Tech Stack section -->
-    <section class="about-me my-6">
+    <section class="about-me my-6" id="about-me">
       <h3 class="title has-text-centered">About me</h3>
       <div class="container about-me-box columns box">
         <div class="description  column">
@@ -151,8 +151,8 @@
       </div>
     </section>
     <!-- Contact me section -->
-    <h2 class="title is-2 has-text-centered">Contact me</h2>
-    <section class="contact box my-6 ">
+    <section class="contact box my-6 " id="contact">
+        <h2 class="title is-2 has-text-centered has-text-white">Contact me</h2>
       <!-- Form -->
       <div class=" form-container">
       <form class="form column">
@@ -192,12 +192,12 @@
   </main>
   <footer class="footer">
     <div class="content has-text-centered">
-      <p class="footer-text">
-        Created by <a href="put github linkedin here">Augusto Faggion</a>
+      <p class="footer-text has-text-white">
+        Created by <a class="has-text-white" href="put github linkedin here">Augusto Faggion</a>
       </p>
       <div class="icons-footer">
-        <i class="devicon-linkedin-plain  icon-footer"></i>
-        <i class="devicon-github-plain icon-footer"></i>
+        <a href=""><i class="devicon-linkedin-plain  icon-footer"></i></a>
+        <a href=""><i class="devicon-github-plain icon-footer"></i></a>
       </div>
     </div>
   </footer>
