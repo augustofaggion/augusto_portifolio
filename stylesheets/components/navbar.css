@@ -7,10 +7,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  margin: 0 0 20px 0;
   }
-
-
 
 /* Show the navbar menu when the 'is-active' class is added */
 .navbar-menu.is-active {
@@ -30,7 +28,8 @@
     display: none;
   }
   .navbar-menu.is-active {
-    display: block;
+    display: flex;
+
   }
   .seo-box {
     display: flex;

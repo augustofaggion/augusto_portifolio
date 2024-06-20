@@ -5,10 +5,9 @@
 /* ! Todo section */
 
  /* todo List */
-  /* smaller size on projects for the box */
-  /* Make icons smaller on the about me section */
+  /* Add mozilla last touches */
+  /* make sure navbar does go over the section h2 when clicke on the link */
   /* Make Css cleaner */
-  /* Make fully responsive */
   /* Add smoth scroll to when scrooling */
 
   /* ? make better footer */
@@ -18,12 +17,21 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 /* html {
-} */
+}
+
+
 
 /* test */
+
+@-moz-document url-prefix() {
+  h1, h2, h3, h4, h5, h6, p, .icon-services, .icons-about{
+    color: black ;
+  }
+}
 
 .box {
   background-color: #fff;
@@ -46,6 +54,11 @@ body {
   --text-color: #fff;
 }
 
+h2 {
+  position: relative; /* z-index only works on positioned elements */
+  z-index: 2; /* or any value higher than the one for .navbar */
+}
+
 
 /* Home section */
 
@@ -58,12 +71,12 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 70vh;
 }
 
 .home-text h1,
 .home-text p{
   color: white;
-  font-size: 2.5rem;
 }
 
 /* Services Section */
@@ -161,9 +174,7 @@ background: var(--secondary-color);  /* fallback for old browsers */
 }
 
 @media  screen and (max-width: 768px) {
-  .icons-about {
-    font-size: 3rem;
-  }
+
 }
 
 .description {
@@ -227,8 +238,10 @@ background: var(--secondary-color);  /* fallback for old browsers */
   }
 
   /* Services */
-
-
+  /* about me */
+  .icons-about {
+    font-size: 3rem;
+  }
 
 }
 
