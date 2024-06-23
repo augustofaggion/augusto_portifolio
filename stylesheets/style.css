@@ -1,36 +1,19 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @import url("./components/whatssap.css");
 @import url("./components/navbar.css");
+@import url("./components/mozilla.css");
 
 /* ! Todo section */
 
  /* todo List */
   /* Add mozilla last touches */
-  /* make sure navbar does go over the section h2 when clicke on the link */
   /* Make Css cleaner */
   /* Add smoth scroll to when scrooling */
-
-  /* ? make better footer */
-
   /* ! */
 
 
 * {
   box-sizing: border-box;
-
-}
-
-/* html {
-}
-
-
-
-/* test */
-
-@-moz-document url-prefix() {
-  h1, h2, h3, h4, h5, h6, p, .icon-services, .icons-about{
-    color: black ;
-  }
 }
 
 .box {
@@ -173,9 +156,6 @@ background: var(--secondary-color);  /* fallback for old browsers */
   margin: 10px; /* Add margin to separate the icons */
 }
 
-@media  screen and (max-width: 768px) {
-
-}
 
 .description {
   display: flex;
@@ -256,12 +236,6 @@ background: var(--secondary-color);  /* fallback for old browsers */
   color: white;
 }
 
-
-
-
-
-
-
   .footer {
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -290,8 +264,6 @@ background: var(--secondary-color);  /* fallback for old browsers */
       margin: 0 10px;  /* Optional: Limit the width of each box */
     }
   }
-
-
 
   /* services */
   .equal-height {
