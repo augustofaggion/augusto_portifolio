@@ -1,26 +1,17 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @import url("./components/whatssap.css");
 @import url("./components/navbar.css");
+@import url("./components/home.css");
+@import url("./components/services.css");
+@import url("./components/projects.css");
+@import url("./components/skills.css");
+@import url("./components/about-me.css");
+@import url("./components/contact.css");
+@import url("./components/footer.css");
 @import url("./components/mozilla.css");
-
-/* ! Todo section */
-
- /* todo List */
-  /* Add mozilla last touches */
-  /* Make Css cleaner */
-  /* Add smoth scroll to when scrooling */
-  /* ! */
-
 
 * {
   box-sizing: border-box;
-}
-
-.box {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 body {
@@ -28,7 +19,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: white;
-  
+
 }
 
 :root {
@@ -38,246 +29,14 @@ body {
   --text-color: #fff;
 }
 
+.box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 h2 {
   position: relative; /* z-index only works on positioned elements */
   z-index: 2; /* or any value higher than the one for .navbar */
 }
-
-
-/* Home section */
-
-.home {
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 70vh;
-}
-
-.home-text h1,
-.home-text p{
-  color: white;
-  text-shadow: 0.5px 0.5px 0.5px lightgrey;
-}
-
-/* Services Section */
-
-.services-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.service-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-grow: 1; /* Make all boxes take up equal space */
-  max-width: 350px; /* Optional: Limit the width of each box */
-  min-height: 350px;
-  margin: 0 10px;  /* Optional: Limit the width of each box */
-}
-
-.icon-services {
-  width: 76px;
-  height: 76px;
-  padding: 10px;
-}
-
-/* Project Section */
-
-.projects-section {
-background: var(--secondary-color);  /* fallback for old browsers */
-}
-
-.projects{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.project {
-  width: 300px;
-}
-
-.img-project {
-  max-width: 350px;
-  max-height: 350px;
-  border-radius: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-}
-/* Skills sections */
-.skills-box {
-  background: rgb(0var(--primary-color),207);
-  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
-}
-
-.skills-text{
-  color: white;
-  font-weight: bold;
-}
-
-.cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Icons */
-.icons-skills {
-  font-size: 4.5rem;
-  padding: 1rem;
-  color: white;
-}
-
-/* About me Section */
-.icon-tech {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the icons within the container */
-  gap: 40px; /* Add spacing between the icons */
-}
-.tech-stack {
-  display: flex;
-  justify-content: center; /* Center the icons within the container */
-
-  flex-wrap: wrap;
-}
-
-
-
-.icons-about {
-  font-size: 5rem;
-  margin: 10px; /* Add margin to separate the icons */
-}
-
-
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Images */
-.img-about-me {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-/* Contact me section */
-.contact {
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-
-  color: white;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  }
-
-
-
-  .form input, .form textarea {
-  width: 500px; /* adjust as needed */
-  height: 40px; /* adjust as needed */
-  padding: 5px; /* adjust as needed */
-  background-color: #fff;
-}
-
-/* footer */
-.icon-footer {
-  font-size: 1.5rem;
-  color: white;
-  margin: 0 15px
-}
-
-@media screen and (max-width: 1068px){
-  .seo-box:last-child {
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 868px) {
-  .form input, .form textarea {
-    width: 350px; /* adjust as needed */
-  }
-
-  /* Services */
-  /* about me */
-  .icons-about {
-    font-size: 3rem;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .form input, .form textarea {
-    width: 250px; /* adjust as needed */
-  }
-
-}
-
-.label{
-  color: white;
-}
-
-  .footer {
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  }
-
-
-
-  /* skills media querie */
-  @media screen and (max-width: 868px) {
-    .skills-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .service-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      flex-grow: 1; /* Make all boxes take up equal space */
-      max-width: 350px; /* Optional: Limit the width of each box */
-      height: 350px;
-      margin: 0 10px;  /* Optional: Limit the width of each box */
-    }
-  }
-
-  /* services */
-  .equal-height {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .equal-height .column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .equal-height .box {
-    flex-grow: 1;
-  }

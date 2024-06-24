@@ -1,0 +1,12 @@
+/* footer */
+.icon-footer {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 15px
+}
+
+.footer {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}

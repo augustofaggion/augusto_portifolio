@@ -1,0 +1,50 @@
+/* Services Section */
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1; /* Make all boxes take up equal space */
+  max-width: 350px; /* Optional: Limit the width of each box */
+  min-height: 350px;
+  margin: 0 10px;  /* Optional: Limit the width of each box */
+}
+
+/* Icons */
+.icon-services {
+  width: 76px;
+  height: 76px;
+  padding: 10px;
+}
+
+/* Services */
+.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal-height .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-height .box {
+  flex-grow: 1;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1068px){
+  .seo-box:last-child {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

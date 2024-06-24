@@ -1,0 +1,41 @@
+/* Contact me section */
+.contact {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input, .form textarea {
+  width: 500px;
+  height: 40px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.label{
+  color: white;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 868px) {
+  .form input, .form textarea {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form input, .form textarea {
+    width: 250px; /* adjust as needed */
+  }
+
+}

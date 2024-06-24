@@ -1,0 +1,43 @@
+/* Skills sections */
+.skills-box {
+  background: rgb(0var(--primary-color),207);
+  background: radial-gradient(circle, rgba(0,68,207,1) 35%, rgba(12,22,108,1) 100%);
+}
+
+.skills-text{
+  color: white;
+  font-weight: bold;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icons */
+.icons-skills {
+  font-size: 4.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+/* skills media querie */
+@media screen and (max-width: 868px) {
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1; /* Make all boxes take up equal space */
+    max-width: 350px; /* Optional: Limit the width of each box */
+    height: 350px;
+    margin: 0 10px;  /* Optional: Limit the width of each box */
+  }
+}
