@@ -28,6 +28,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: white;
+  
 }
 
 :root {
@@ -60,6 +61,7 @@ h2 {
 .home-text h1,
 .home-text p{
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px lightgrey;
 }
 
 /* Services Section */

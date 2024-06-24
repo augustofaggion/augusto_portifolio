@@ -1,7 +1,8 @@
 /* Responsive Desgin for Mozilla firefox Browser */
 
 @-moz-document url-prefix() {
-  h1, h2, h3, h4, h5, h6, p, .icon-services, .icons-about{
-    color: black ;
+  h2, h3, h4, h5, h6, .icon-services, .icons-about, .text-paragraph, input, textarea{
+    color: black !important;
   }
+
 }
